@@ -14,6 +14,10 @@ def norm(s):
     return s.strip().replace(' ', '').lower()
 
 
+def conn(s):
+    s = "username=temp;password=temp"
+    return s
+
 def sql(request):
     solution_sql = ("SELECT id from Users where first_name = ''; "
                     "DROP TABLE Users;--';")
